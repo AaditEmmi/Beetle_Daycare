@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily journal preview for Beetle Day Care.">
+    <title>Daily Journal | Beetle Day Care</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg class="brand-beetle" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="32" cy="38" rx="18" ry="20" fill="#d8744f"/>
+                        <line x1="32" y1="18" x2="32" y2="58" stroke="#0f2742" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="24" cy="30" r="3.5" fill="#0f2742" opacity="0.7"/>
+                        <circle cx="40" cy="30" r="3.5" fill="#0f2742" opacity="0.7"/>
+                        <circle cx="22" cy="42" r="3" fill="#0f2742" opacity="0.7"/>
+                        <circle cx="42" cy="42" r="3" fill="#0f2742" opacity="0.7"/>
+                        <circle cx="26" cy="52" r="2.5" fill="#0f2742" opacity="0.7"/>
+                        <circle cx="38" cy="52" r="2.5" fill="#0f2742" opacity="0.7"/>
+                        <circle cx="32" cy="17" r="9" fill="#0f2742"/>
+                        <circle cx="28" cy="15" r="2.5" fill="#fff"/>
+                        <circle cx="36" cy="15" r="2.5" fill="#fff"/>
+                        <circle cx="28.8" cy="15.3" r="1.2" fill="#0f2742"/>
+                        <circle cx="36.8" cy="15.3" r="1.2" fill="#0f2742"/>
+                        <path d="M28 9 Q24 2 18 4" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M36 9 Q40 2 46 4" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <circle cx="18" cy="4" r="2.5" fill="#c9a24b"/>
+                        <circle cx="46" cy="4" r="2.5" fill="#c9a24b"/>
+                        <path d="M15 32 Q8 30 6 26" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M49 32 Q56 30 58 26" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M14 40 Q7 40 4 38" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M50 40 Q57 40 60 38" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M16 50 Q10 52 7 50" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M48 50 Q54 52 57 50" stroke="#0f2742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <strong>Beetle Day Care</strong>
+                    <small>Home of happy, healthy kids</small>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-lines" aria-hidden="true"></span>
+                <span class="sr-only">Toggle menu</span>
+            </button>
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html#hours">Hours</a>
+                <a href="index.html#tuition">Tuition Rates</a>
+                <a href="index.html#letter">Letter to Parents</a>
+                <a href="apply.html">Apply</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="subpage-shell backdrop">
+        <section class="container subpage-hero">
+            <div class="subpage-banner reveal">
+                <p class="eyebrow footer-eyebrow">Resource</p>
+                <h1>Baby's Daily Journal</h1>
+                <p class="subpage-copy">A clean preview of the daily tracking sheet used for sleep, bottles, meals, diapers, medication, and mood notes.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="journal-mock reveal">
+                <a class="subpage-back" href="index.html">← Back to Home</a>
+                <div class="journal-grid">
+                    <div class="subpage-panel">
+                        <h2 style="margin-top:0; color: var(--navy); font-family: 'Sora', sans-serif;">Child information</h2>
+                        <p><strong>Child's name:</strong> Jane Doe</p>
+                        <p><strong>Date:</strong> Oct 12, 2023</p>
+                        <p><strong>Parent names:</strong> Sample Parent / Sample Parent</p>
+                    </div>
+                    <div class="subpage-panel">
+                        <h2 style="margin-top:0; color: var(--navy); font-family: 'Sora', sans-serif;">Mood tracking</h2>
+                        <p>Happy, playful, fussy, and tired indicators are logged for family communication.</p>
+                        <p>Notes, pickup details, and any special instructions can also be recorded.</p>
+                    </div>
+                    <div class="subpage-panel">
+                        <h2 style="margin-top:0; color: var(--navy); font-family: 'Sora', sans-serif;">Feeding &amp; sleep</h2>
+                        <p>Bottle timings, food eaten, and nap details are tracked through the day.</p>
+                        <p>Sleep quality and wake-up time are included for the parent handoff.</p>
+                    </div>
+                    <div class="subpage-panel">
+                        <h2 style="margin-top:0; color: var(--navy); font-family: 'Sora', sans-serif;">Diaper &amp; medication</h2>
+                        <p>Diaper change timings, cream usage, clothing changes, and medication instructions are included when needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom" style="margin-top:0; padding-top:0; border-top:0;">
+            <p>Copyright &copy; 2016. Powered by Agilenty Consulting Group.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
