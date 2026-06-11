@@ -758,6 +758,46 @@ button {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* Ensure caption sits below the hero image on small and medium screens and doesn't overlap next content */
+@media (max-width: 1024px) {
+  .image-card {
+    overflow: visible;
+    padding-bottom: 7.5rem; /* reserve larger space for caption placed below */
+  }
+  .image-card-caption {
+    position: static !important;
+    margin: 0.75rem 1rem 1.25rem 1rem !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    background: rgba(255,255,255,0.96) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: var(--radius-md) !important;
+  }
+}
+
+/* Extra padding and safer layout for narrow phones (iPhone SE, iPhone 12/13 Pro widths) */
+@media (max-width: 400px) {
+  .image-card {
+    padding-bottom: 9.5rem; /* more space for caption */
+  }
+  .image-card-caption {
+    margin: 0.6rem 0.75rem 1.6rem 0.75rem !important;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .image-card {
+    padding-bottom: 11rem; /* ensure iPhone SE has enough space */
+  }
+  .image-card-caption {
+    margin: 0.5rem 0.6rem 1.8rem 0.6rem !important;
+    font-size: 0.95rem;
+  }
+}
+
 .info-card,
 .detail-card,
 .pricing-card,
